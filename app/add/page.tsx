@@ -1,5 +1,6 @@
 "use client";
 
+import PopComponent from "@/components/AddForm";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -27,13 +28,12 @@ const add = () => {
 
     try {
       console.log(inputs)
-      const res = await fetch(`${process.env.BASE_URL}/api/get`, {
+      const res = await fetch(`http://localhost:3000/api/get`, {
         method: "POST",
         body: JSON.stringify({
           ...inputs,
         }),
       });
-      router.refresh();
       
     } catch (error) {
         throw new Error("INVALID")
@@ -66,6 +66,7 @@ const add = () => {
           Upload
         </button>
       </form>
+      <PopComponent />
     </div>
   );
 };
