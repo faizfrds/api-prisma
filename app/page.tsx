@@ -24,7 +24,7 @@ export default async function Home() {
   console.log(data);
 
   return (
-    <div className="py-5 px-10 text-center">
+    <div className="py-5 px-10 text-center bg-neutral-200">
       <div className="p-10 justify-center flex items-center">
         <div className="text-4xl justify-center capitalize font-bold bg-yellow-300 p-4 rounded-full w-[50vh]">
           idea board

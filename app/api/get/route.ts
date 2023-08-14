@@ -17,9 +17,7 @@ export const GET = async () => {
 
 export const POST = async (req: NextRequest) => {
   try {
-    console.log("YOU GHER");
     const body = await req.json();
-    console.log(body);
     const posts = await prisma.post.create({
       data: body,
     });

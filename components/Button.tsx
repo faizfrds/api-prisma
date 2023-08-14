@@ -29,7 +29,7 @@ export default function Button() {
 
     try {
       console.log(inputs);
-      const res = await fetch(`http://localhost:3000/api/get`, {
+      const res = await fetch(`/api/get`, {
         method: "POST",
         body: JSON.stringify({
           ...inputs,

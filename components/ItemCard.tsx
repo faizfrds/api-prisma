@@ -29,7 +29,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ post }) => {
 
   return (
     <div className="lg:relative group flex flex-col rounded-md items-center overflow-hidden bg-neutral-400/20 transition shadow-lg shadow-black lg:h-[40vh] h-[50vh]">
-        <div className="h-fit py-4 bg-green-500 w-full text-2xl font-semibold">
+        <div className="h-fit py-4 bg-emerald-500 w-full text-2xl font-semibold">
           {post.title}
           <div onClick={onClick} className="absolute top-5 left-3 hover:cursor-pointer">
             <HiTrash />        
