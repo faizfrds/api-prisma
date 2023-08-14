@@ -7,7 +7,7 @@ interface ItemListingProps {
 
 const ItemListing: React.FC<ItemListingProps> = ({ post }) => {
   if (post.length === 0) {
-    return <div className="mt-4 text-neutral-400">No cats available for adoption for now!</div>;
+    return <div className="mt-4 text-neutral-400">Nothing to be shown yet, add some posts!</div>;
   } 
   else {
 
