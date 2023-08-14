@@ -4,7 +4,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 First, run Docker:
 
+```bash
 docker compose up
+```
 
 Then, run the development server:
 
